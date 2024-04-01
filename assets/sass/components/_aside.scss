@@ -1,0 +1,196 @@
+aside {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  padding: 6% 0.5% 1% 2%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    border-radius: 25px;
+    background-color: whitesmoke;
+
+    .img {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: -75px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .inf {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 15px;
+
+      h1 {
+        font-family: "Rubik Scribble", system-ui;
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        a {
+          text-decoration: none;
+          color: black;
+          ion-icon {
+            margin-top: 15px;
+            font-size: 35px;
+            transition: ease 0.5s;
+            &.in:hover {
+              color: rgb(14, 118, 168);
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: first baseline;
+      gap: 15px;
+      border-radius: 25px;
+      background: #e0e0e0;
+      width: 85%;
+      height: 50%;
+      padding: 30px;
+      .contact-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        .icon {
+          width: 35px;
+          height: 35px;
+          background: whitesmoke;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          font-size: 25px;
+          transition: ease 0.5s;
+
+          &-phone {
+            color: rgb(245, 108, 108);
+            &:hover {
+              background: rgb(245, 108, 108);
+              color: whitesmoke;
+            }
+          }
+
+          &-mail {
+            color: rgb(110, 108, 245);
+            &:hover {
+              background: rgb(110, 108, 245);
+              color: whitesmoke;
+            }
+          }
+
+          &-location {
+            color: rgb(229, 108, 245);
+            &:hover {
+              background: rgb(229, 108, 245);
+              color: whitesmoke;
+            }
+          }
+
+          &-birthday {
+            color: rgb(16, 95, 0);
+            &:hover {
+              background: rgb(16, 95, 0);
+              color: whitesmoke;
+            }
+          }
+        }
+      }
+    }
+    & button {
+      background: blue;
+      color: whitesmoke;
+      border: none;
+      width: 150px;
+      height: 45px;
+      margin: 45px;
+      border-radius: 15px;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: ease 0.1s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      ion-icon {
+        font-size: 50px;
+        transform: translateY(50px);
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+      span {
+        font-size: 18px;
+        transform: translateY(11px);
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        background: #b73ffc;
+        span {
+          transform: translateY(-25px);
+        }
+        ion-icon {
+          transform: translateY(-12px);
+        }
+      }
+      &:active {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}

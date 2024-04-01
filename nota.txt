@@ -1,0 +1,12 @@
+// .rubik-scribble-regular {
+//   font-family: "Rubik Scribble", system-ui;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

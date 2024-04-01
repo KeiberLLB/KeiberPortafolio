@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: #76bdff;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+}
+
+aside {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  padding: 6% 0.5% 1% 2%;
+}
+aside .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  position: relative;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
+aside .content .img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: -75px;
+}
+aside .content .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+aside .content .inf {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+}
+aside .content .inf h1 {
+  font-family: "Rubik Scribble", system-ui;
+  font-size: 30px;
+}
+aside .content .inf h2 {
+  font-size: 18px;
+}
+aside .content .inf .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+aside .content .inf .social-media a {
+  text-decoration: none;
+  color: black;
+}
+aside .content .inf .social-media a ion-icon {
+  margin-top: 15px;
+  font-size: 35px;
+  transition: ease 0.5s;
+}
+aside .content .inf .social-media a ion-icon.in:hover {
+  color: rgb(14, 118, 168);
+}
+aside .content .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 15px;
+  border-radius: 25px;
+  background: #e0e0e0;
+  width: 85%;
+  height: 50%;
+  padding: 30px;
+}
+aside .content .contact .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+aside .content .contact .contact-info a {
+  text-decoration: none;
+  color: black;
+}
+aside .content .contact .contact-info .icon {
+  width: 35px;
+  height: 35px;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 25px;
+  transition: ease 0.5s;
+}
+aside .content .contact .contact-info .icon-phone {
+  color: rgb(245, 108, 108);
+}
+aside .content .contact .contact-info .icon-phone:hover {
+  background: rgb(245, 108, 108);
+  color: whitesmoke;
+}
+aside .content .contact .contact-info .icon-mail {
+  color: rgb(110, 108, 245);
+}
+aside .content .contact .contact-info .icon-mail:hover {
+  background: rgb(110, 108, 245);
+  color: whitesmoke;
+}
+aside .content .contact .contact-info .icon-location {
+  color: rgb(229, 108, 245);
+}
+aside .content .contact .contact-info .icon-location:hover {
+  background: rgb(229, 108, 245);
+  color: whitesmoke;
+}
+aside .content .contact .contact-info .icon-birthday {
+  color: rgb(16, 95, 0);
+}
+aside .content .contact .contact-info .icon-birthday:hover {
+  background: rgb(16, 95, 0);
+  color: whitesmoke;
+}
+aside .content button {
+  background: blue;
+  color: whitesmoke;
+  border: none;
+  width: 150px;
+  height: 45px;
+  margin: 45px;
+  border-radius: 15px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: ease 0.1s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+aside .content button ion-icon {
+  font-size: 50px;
+  transform: translateY(50px);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+aside .content button span {
+  font-size: 18px;
+  transform: translateY(11px);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+aside .content button:hover {
+  background: #b73ffc;
+}
+aside .content button:hover span {
+  transform: translateY(-25px);
+}
+aside .content button:hover ion-icon {
+  transform: translateY(-12px);
+}
+aside .content button:active {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+  transform: scale(0.95);
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

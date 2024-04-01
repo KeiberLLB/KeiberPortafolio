@@ -3,91 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Esta pagina web es el portafolio de Keiber Lazaro"
-    />
-    <meta
-      name="keiyword"
-      content="desarrollo, web, mobile, fron-end, back-end, leandro, lazaro, python, js, JavaScript"
-    />
-    <meta name="autor" content="Keiber Leandro Lazaro Bastos" />
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link
-      rel="shortcut icon"
-      href="img/kickstarter-logo-24.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <title>Portafolio KLLB</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <span>KeiberLLB</span>
-      </div>
-
-      <nav class="navbar">
-        <a href="#" class="a">Home</a>
-        <a href="#" class="a">About</a>
-        <a href="#" class="a">Review</a>
-        <a href="#" class="a">Feactured</a>
-        <a href="#" class="a">Contact</a>
-      </nav>
-      <!-- <div class="social-media">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/k-leandro-l%C3%A1zaro-bastos-8008612a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          class="l"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          target="_blank"
-          href="https://x.com/KeiberLLB?t=ZDeaJjb5hU84lanBLRFgYw&s=09"
-          class="x"
-        >
-          <i class="bx bx-x"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/leandrolazaro?utm_source=qr&igshid=OWM2ZWI5NDFkNA=="
-          class="i"
-        >
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://youtube.com/@k.leandrolazarobastos3701?si=I44ovLhRDRfr5RIh"
-          class="y"
-        >
-          <i class="bx bxl-youtube"></i>
-        </a>
-      </div> -->
-    </header>
-    <footer class="footer">
-      <a
-        target="_blank"
-        href="https://api.whatsapp.com/send/?phone=3138319975&text"
-        class="w"
-        ><i class="bx bxl-whatsapp"></i
-      ></a>
-      <a href="mailto:leandro1991.9@gmail.com" class="g"
-        ><i class="bx bxl-gmail"></i
-      ></a>
-    </footer>
-    <!-- <section>
-    <h1>KEIBER LAZARO</h1>
-    <h2>Software Developer</h2>
-    <p>Hola! Soy Keiber, un apasionado desarrollador con bases sólidas en Python, lógica de programación, HTML, CSS y JavaScript. 
-    Actualmente, estoy en formación y tambien soy Tecnólogo en Obras Civiles.
-    Mi visión es convertirme en un desarrollador con amplios conocimientos en back-end y acumular amplias experiencias.
-    Ademas de mis habilidades técnicas, soy bilingüe en inglés y francés. 
-    Estoy comprometido con mantener uun excelente ambiente laboral, soy una persona muy competitiva, comparto mis conocimientos e intento tomar de los demas lo mejor para mejoras como profesional y como persona. </p>
-
-  </section> -->
+    <main>
+      <aside>
+        <div class="content">
+          <div class="img">
+            <img src="./assets/img/photo1702659253.jpeg" alt="" />
+          </div>
+          <div class="inf">
+            <h1>Keiber Lázaro</h1>
+            <h2>Software Developer</h2>
+            <div class="social-media">
+              <a href="https://github.com/KeiberLLB" target="_blank"
+                ><ion-icon name="logo-github"></ion-icon
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/k-leandro-lázaro-bastos-8008612a4"
+                target="_blank"
+                ><ion-icon class="in" name="logo-linkedin"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="contact-info">
+              <div class="icon icon-phone">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <a href="tel:+573138319975">+57 3138319975</a>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="icon icon-mail">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <a href="mailto:leandro1991.9@gmail.com"
+                  >leandro1991.9@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="icon icon-location">
+                <ion-icon name="location"></ion-icon>
+              </div>
+              <div class="text">
+                <h3>Location</h3>
+                <p>Medellín - Antioquia</p>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="icon icon-birthday">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="text">
+                <h3>Birthday</h3>
+                <p>16 september 1991</p>
+              </div>
+            </div>
+          </div>
+          <button>
+            <span>Download CV</span>
+            <ion-icon name="cloud-download-outline"></ion-icon>
+          </button>
+        </div>
+      </aside>
+      <section>
+        <header></header>
+        <article class="about"></article>
+        <article class="projects"></article>
+        <article class="contact"></article>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

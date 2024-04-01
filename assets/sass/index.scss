@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: #76bdff;
+  width: 100vw;
+}
+
+@import "components/main", "components/aside", "components/section";
+@import "components/header", "components/article";
