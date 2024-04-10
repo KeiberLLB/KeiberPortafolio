@@ -14,7 +14,7 @@ aside {
     height: 90%;
     position: relative;
     border-radius: 15px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.5);
 
     .img {  
       width: 150px;
@@ -70,7 +70,7 @@ aside {
       align-items: first baseline;
       gap: 15px;
       border-radius: 15px;
-      background: #e0e0e0;
+      background: rgba(245, 245, 245, 0.6);
       width: 85%;
       height: 50%;
       padding: 30px;
