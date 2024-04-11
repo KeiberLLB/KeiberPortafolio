@@ -14,7 +14,7 @@ body {
 main {
   display: flex;
   width: 100vw;
-  background-image: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  background-image: linear-gradient(-225deg, #1c7f9e 0%, #afe8f2 48%, #79d5e7 100%);
 }
 
 aside {
@@ -23,14 +23,14 @@ aside {
   display: flex;
   flex-direction: column;
   position: static;
-  padding: 6% 0.5% 1% 2%;
+  padding: 7% 0.5% 1% 2%;
 }
 aside .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 98%;
   position: relative;
   border-radius: 15px;
   background-color: rgba(245, 245, 245, 0.5);
@@ -75,6 +75,10 @@ aside .content .inf .social-media a ion-icon {
 }
 aside .content .inf .social-media a ion-icon.in:hover {
   color: rgb(14, 118, 168);
+  transform: scale(1.3);
+}
+aside .content .inf .social-media a ion-icon:hover {
+  transform: scale(1.3);
 }
 aside .content .contact {
   display: flex;
@@ -85,7 +89,7 @@ aside .content .contact {
   border-radius: 15px;
   background: rgba(245, 245, 245, 0.6);
   width: 85%;
-  height: 50%;
+  height: 55%;
   padding: 30px;
 }
 aside .content .contact .contact-info {
@@ -200,16 +204,17 @@ aside .content button:active {
 section {
   width: 75%;
   display: flex;
+  flex-direction: column;
 }
 
 header {
   width: 100%;
-  height: 10%;
+  height: 12%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: static;
-  margin: 1.2% 2% 1% 2%;
+  padding: 1.2% 0 0 2%;
 }
 header .logo {
   width: 25%;
@@ -239,6 +244,7 @@ header .nav-bar .nav-links {
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 header .nav-bar .nav-links .nav-link {
   display: flex;
@@ -257,25 +263,67 @@ header .nav-bar .nav-links .nav-link {
   gap: 5px;
 }
 header .nav-bar .nav-links .nav-link #open-folder {
-  display: none;
+  position: absolute;
+  opacity: 0;
+}
+header .nav-bar .nav-links .nav-link #close-folder {
+  position: absolute;
+}
+header .nav-bar .nav-links .nav-link p {
+  position: absolute;
+  margin-top: 30px;
 }
 header .nav-bar .nav-links .nav-link ion-icon {
   font-size: 35px;
   color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.5s ease;
+  margin-top: -20px;
 }
 header .nav-bar .nav-links .nav-link:hover {
   transform: scale(1.1, 1.1);
   background-color: rgba(245, 245, 245, 0.8);
 }
-header .nav-bar .nav-links .nav-link:hover #open-folder {
-  display: block;
-}
 header .nav-bar .nav-links .nav-link:hover #close-folder {
-  display: none;
+  animation: opacityOff 0.5s ease;
+  opacity: 0;
+}
+header .nav-bar .nav-links .nav-link:hover #open-folder {
+  animation: opacityOn 0.5s ease;
+  opacity: 1;
+}
+header .nav-bar .nav-links .nav-link:hover:not(:hover) #close-folder {
+  opacity: 0;
+  animation: opacityOn ease-in-out forwards;
+}
+header .nav-bar .nav-links .nav-link:hover:not(:hover) #open-folder {
+  opacity: 1;
+  animation: opacityOff ease-in-out forwards;
 }
 header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
   filter: blur(5px);
   transform: scale(0.9, 0.9);
+}
+
+@keyframes opacityOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityOff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.about {
+  width: 100%;
+  height: 84.4%;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */
