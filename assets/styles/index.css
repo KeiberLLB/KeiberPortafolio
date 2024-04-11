@@ -14,7 +14,7 @@ body {
 main {
   display: flex;
   width: 100vw;
-  background-image: linear-gradient(-225deg, #1c7f9e 0%, #afe8f2 48%, #79d5e7 100%);
+  background-color: whitesmoke;
 }
 
 aside {
@@ -33,7 +33,7 @@ aside .content {
   height: 98%;
   position: relative;
   border-radius: 15px;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 aside .content .img {
   width: 150px;
@@ -220,7 +220,7 @@ header .logo {
   width: 25%;
   height: 100%;
   border-radius: 15px;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +253,7 @@ header .nav-bar .nav-links .nav-link {
   justify-content: center;
   height: 100%;
   width: 20%;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   transition: ease 0.2s;
   cursor: pointer;
   font-size: 14px;
@@ -323,6 +323,37 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
 .about {
   width: 100%;
   height: 84.4%;
+  border-radius: 15px;
+  padding: 25px 40px 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about .about-content {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 37%;
+  gap: 20px;
+  padding: 20px;
+}
+.about .about-content p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.about .about-content .about-content-text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.about .skills {
+  display: flex;
+  gap: 2.2%;
+  height: 100%;
+}
+.about .skills .skill {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 48.9%;
   border-radius: 15px;
 }
 
