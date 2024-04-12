@@ -4,7 +4,7 @@ aside {
   display: flex;
   flex-direction: column;
   position: static;
-  padding:7% 0.5% 1% 2%;
+  padding: 7% 0.5% 1% 2%;
 
   .content {
     display: flex;
@@ -14,9 +14,9 @@ aside {
     height: 98%;
     position: relative;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 0.2);
 
-    .img {  
+    .img {
       width: 150px;
       height: 150px;
       border-radius: 15px;
@@ -38,10 +38,12 @@ aside {
 
       h1 {
         font-size: 30px;
+        color: rgba(0, 0, 0, 0.7)
       }
 
       h2 {
         font-size: 18px;
+        color: rgba(0, 0, 0, 0.7)
       }
 
       .social-media {
@@ -55,12 +57,13 @@ aside {
             margin-top: 15px;
             font-size: 35px;
             transition: ease 0.5s;
+            color: rgba(0, 0, 0, 0.7);
             &.in:hover {
               color: rgb(14, 118, 168);
               transform: scale(1.3);
             }
-            &:hover{
-            transform: scale(1.3);
+            &:hover {
+              transform: scale(1.3);
             }
           }
         }
@@ -78,6 +81,7 @@ aside {
       width: 85%;
       height: 55%;
       padding: 30px;
+      color: rgba(0, 0, 0, 0.7);
       .contact-info {
         display: flex;
         align-items: center;
@@ -134,7 +138,7 @@ aside {
       }
     }
     & button {
-      background: #5D9FFF;
+      background: #2a4f79;
       color: whitesmoke;
       border: none;
       width: 150px;
@@ -146,12 +150,12 @@ aside {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      transition: ease 0.1s;
+      transition: ease 0.5s;
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      ion-icon {
-        font-size: 50px;
+      #cloud {
+        font-size: 25px;
         transform: translateY(50px);
         position: relative;
         transition: transform 0.3s ease;
@@ -164,11 +168,11 @@ aside {
       }
 
       &:hover {
-        background: #6BBBFF;
+        background: #ee943f;
         span {
           transform: translateY(-25px);
         }
-        ion-icon {
+        #cloud {
           transform: translateY(-12px);
         }
       }

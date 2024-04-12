@@ -14,7 +14,7 @@ body {
 main {
   display: flex;
   width: 100vw;
-  background-color: whitesmoke;
+  background-color: rgba(70, 125, 177, 0.8352941176);
 }
 
 aside {
@@ -33,7 +33,7 @@ aside .content {
   height: 98%;
   position: relative;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 245, 245, 0.2);
 }
 aside .content .img {
   width: 150px;
@@ -55,9 +55,11 @@ aside .content .inf {
 }
 aside .content .inf h1 {
   font-size: 30px;
+  color: rgba(0, 0, 0, 0.7);
 }
 aside .content .inf h2 {
   font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
 }
 aside .content .inf .social-media {
   display: flex;
@@ -72,6 +74,7 @@ aside .content .inf .social-media a ion-icon {
   margin-top: 15px;
   font-size: 35px;
   transition: ease 0.5s;
+  color: rgba(0, 0, 0, 0.7);
 }
 aside .content .inf .social-media a ion-icon.in:hover {
   color: rgb(14, 118, 168);
@@ -91,6 +94,7 @@ aside .content .contact {
   width: 85%;
   height: 55%;
   padding: 30px;
+  color: rgba(0, 0, 0, 0.7);
 }
 aside .content .contact .contact-info {
   display: flex;
@@ -142,7 +146,7 @@ aside .content .contact .contact-info .icon-birthday:hover {
   color: whitesmoke;
 }
 aside .content button {
-  background: #5D9FFF;
+  background: #2a4f79;
   color: whitesmoke;
   border: none;
   width: 150px;
@@ -154,13 +158,13 @@ aside .content button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: ease 0.1s;
+  transition: ease 0.5s;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-aside .content button ion-icon {
-  font-size: 50px;
+aside .content button #cloud {
+  font-size: 25px;
   transform: translateY(50px);
   position: relative;
   transition: transform 0.3s ease;
@@ -172,12 +176,12 @@ aside .content button span {
   transition: transform 0.3s ease;
 }
 aside .content button:hover {
-  background: #6BBBFF;
+  background: #ee943f;
 }
 aside .content button:hover span {
   transform: translateY(-25px);
 }
-aside .content button:hover ion-icon {
+aside .content button:hover #cloud {
   transform: translateY(-12px);
 }
 aside .content button:active {
@@ -220,7 +224,7 @@ header .logo {
   width: 25%;
   height: 100%;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 245, 245, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +257,7 @@ header .nav-bar .nav-links .nav-link {
   justify-content: center;
   height: 100%;
   width: 20%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 245, 245, 0.2);
   transition: ease 0.2s;
   cursor: pointer;
   font-size: 14px;
@@ -320,9 +324,16 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
     opacity: 0;
   }
 }
-.about {
+.art {
   width: 100%;
+  position: relative;
   height: 84.4%;
+}
+
+.about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
   padding: 25px 40px 0 25px;
   display: flex;
@@ -330,31 +341,123 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
   gap: 25px;
 }
 .about .about-content {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 245, 245, 0.2);
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  width: 100%;
   height: 37%;
   gap: 20px;
   padding: 20px;
-}
-.about .about-content p {
-  font-size: 30px;
-  font-weight: bold;
+  justify-content: space-evenly;
 }
 .about .about-content .about-content-text {
-  font-size: 20px;
+  width: 80%;
+  font-size: 17px;
   line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7);
+}
+.about .about-content .about-content-text p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.about .about-content .img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 15%;
+}
+.about .about-content .img img {
+  width: 100%;
 }
 .about .skills {
   display: flex;
   gap: 2.2%;
+  width: 100%;
   height: 100%;
+  color: rgba(0, 0, 0, 0.7);
 }
 .about .skills .skill {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 245, 245, 0.2);
   width: 48.9%;
+  height: 100%;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+.about .skills .skill p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25px;
+  font-weight: bold;
+}
+.about .skills .skill .skill-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.about .skills .skill .skill-content .skill-content-item {
+  position: relative;
+  padding: 10px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(70, 125, 177, 0.8352941176);
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: ease 0.2s;
+  display: flex;
+  justify-content: center;
+}
+.about .skills .skill .skill-content .skill-content-item .info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: rgba(238, 148, 63, 0.737254902);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  margin-top: -65px;
+  font-weight: bold;
+}
+.about .skills .skill .skill-content .skill-content-item #high {
+  width: auto;
+  height: 100%;
+}
+.about .skills .skill .skill-content .skill-content-item:hover {
+  transform: scale(1.1);
+  background-color: rgba(245, 245, 245, 0.5);
+}
+.about .skills .skill .skill-content .skill-content-item:hover .info {
+  animation: opacityOn 0.5s ease;
+  opacity: 1;
+}
+.about .skills .skill .skill-content .skill-content-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about .skills .skill .skill-content:hover > .skill-content-item:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}
+
+@keyframes opacityOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
