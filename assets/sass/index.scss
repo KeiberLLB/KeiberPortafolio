@@ -8,9 +8,5 @@
   font-family: "Raleway", sans-serif;
 }
 
-body {
-  width: 100vw;
-}
-
 @import "components/main", "components/aside", "components/section";
 @import "components/header", "components/article";
