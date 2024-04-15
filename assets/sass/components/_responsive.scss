@@ -1,7 +1,32 @@
 @media screen and (max-height: 768px) {
-  aside .content .img {
-    width: 8em;
-    height: 8em;
+  aside {
+    height: 768px;
+
+    .content {
+      height: 100%;
+      .inf {
+        height: 10%;
+        .social-media {
+          a {
+            ion-icon {
+              margin-top: 0;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .contact {
+        height: 55%;
+      }
+      .img {
+        width: 8em;
+        height: 8em;
+        margin-top: -5em;
+      }
+    }
   }
-  
+  .about .skills .skill .skill-content .skill-content-item {
+    width: 6.7em;
+    height: 6.7em;
+  }
 }

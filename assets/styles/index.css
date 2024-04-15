@@ -91,7 +91,6 @@ aside .content .contact {
   gap: 1em;
   border-radius: 15px;
   background: rgba(245, 245, 245, 0.6);
-  width: 85%;
   padding: 2em;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -101,6 +100,7 @@ aside .content .contact .contact-info {
   gap: 1em;
   margin: 1em 0;
   width: 100%;
+  text-overflow: ellipsis;
 }
 aside .content .contact .contact-info h3 {
   font-size: 1vw;
@@ -114,8 +114,8 @@ aside .content .contact .contact-info a {
   color: black;
 }
 aside .content .contact .contact-info .icon {
-  width: 1.5em;
-  height: 1.5em;
+  width: 45px;
+  height: 45px;
   background: whitesmoke;
   display: flex;
   align-items: center;
@@ -463,9 +463,30 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
   }
 }
 @media screen and (max-height: 768px) {
+  aside {
+    height: 768px;
+  }
+  aside .content {
+    height: 100%;
+  }
+  aside .content .inf {
+    height: 10%;
+  }
+  aside .content .inf .social-media a ion-icon {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  aside .content .contact {
+    height: 55%;
+  }
   aside .content .img {
     width: 8em;
     height: 8em;
+    margin-top: -5em;
+  }
+  .about .skills .skill .skill-content .skill-content-item {
+    width: 6.7em;
+    height: 6.7em;
   }
 }
 
