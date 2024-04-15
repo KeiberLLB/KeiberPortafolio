@@ -35,8 +35,8 @@ aside .content {
   background-color: rgba(245, 245, 245, 0.2);
 }
 aside .content .img {
-  width: 10em;
-  height: 10em;
+  width: 9em;
+  height: 9em;
   border-radius: 15px;
   overflow: hidden;
   margin-top: -6em;
@@ -460,6 +460,12 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-height: 768px) {
+  aside .content .img {
+    width: 8em;
+    height: 8em;
   }
 }
 
