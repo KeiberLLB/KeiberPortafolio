@@ -7,6 +7,11 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+body {
+  background-color: #467db1d5;
+  width: 100vw;
+  min-height: 100vh;
+}
 
 @import "components/main", "components/aside", "components/section";
 @import "components/header", "components/article";

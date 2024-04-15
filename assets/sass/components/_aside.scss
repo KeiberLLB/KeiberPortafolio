@@ -1,6 +1,5 @@
 aside {
   width: 25%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   position: static;
@@ -34,14 +33,15 @@ aside {
       flex-direction: column;
       text-align: center;
       margin: 2em;
+      width: 100%;
 
       h1 {
-        font-size: 30px;
+        font-size: 2vw;
         color: rgba(0, 0, 0, 0.7);
       }
 
       h2 {
-        font-size: 18px;
+        font-size: 1.5vw;
         color: rgba(0, 0, 0, 0.7);
       }
 
@@ -49,6 +49,7 @@ aside {
         display: flex;
         justify-content: center;
         gap: 1em;
+        width: 100%;
         a {
           text-decoration: none;
           color: black;
