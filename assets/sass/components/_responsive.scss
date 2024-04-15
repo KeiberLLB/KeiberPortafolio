@@ -1,31 +1,25 @@
 @media screen and (max-height: 768px) {
   aside {
-    height: 768px;
-
     .content {
-      height: 100%;
+      gap: 0;
+      button{
+      margin-top: 15px;
+      }
       .inf {
-        height: 10%;
-        margin-top: 15px;
-        margin-bottom: 35px;
+        margin: 5px;
         .social-media {
-          gap: 0px;
           a {
             ion-icon {
-              margin-top: 0;
-              font-size: 30px;
             }
           }
         }
       }
       .contact {
-        height: 55%;
-        gap: 0px;
+        gap: 0;
       }
       .img {
-        width: 8em;
-        height: 8em;
-        margin-top: -5em;
+        width: 150px;
+        height: 150px;
       }
     }
   }

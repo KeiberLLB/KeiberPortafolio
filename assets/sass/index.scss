@@ -1,3 +1,4 @@
+@use "abstracts/variables" as variable;
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -8,11 +9,12 @@
   font-family: "Raleway", sans-serif;
 }
 body {
-  background-color: #467db1d5;
+  background-color: variable.$primary;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
 }
 

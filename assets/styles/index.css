@@ -8,41 +8,47 @@
 }
 
 body {
-  background-color: rgba(70, 125, 177, 0.8352941176);
+  background-color: #2d435c;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 main {
   display: flex;
   height: 100%;
+  width: 100%;
 }
 
 aside {
   width: 25%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: static;
-  padding: 7% 0.5% 1% 2%;
+  margin: 16px 16px 16px 16px;
+  padding: 3% 0 0 0;
+  position: relative;
+  background-color: rgba(245, 245, 245, 0.2);
+  border-radius: 15px;
 }
 aside .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  position: relative;
-  border-radius: 15px;
-  background-color: rgba(245, 245, 245, 0.2);
+  height: 100%;
+  position: absolute;
+  gap: 15px;
 }
 aside .content .img {
   width: 9em;
   height: 9em;
   border-radius: 15px;
   overflow: hidden;
-  margin-top: -6em;
 }
 aside .content .img img {
   width: 100%;
@@ -53,7 +59,6 @@ aside .content .inf {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2em;
   width: 100%;
 }
 aside .content .inf h1 {
@@ -75,7 +80,7 @@ aside .content .inf .social-media a {
   color: black;
 }
 aside .content .inf .social-media a ion-icon {
-  margin-top: 1em;
+  margin-top: 5px;
   font-size: 35px;
   transition: ease 0.5s;
   color: rgba(0, 0, 0, 0.7);
@@ -217,6 +222,7 @@ aside .content button:active {
 }
 section {
   width: 75%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -266,7 +272,7 @@ header .nav-bar .nav-links .nav-link {
   justify-content: center;
   height: 100%;
   width: 20%;
-  background-color: rgba(245, 245, 245, 0.2);
+  background-color: #2d435c;
   transition: ease 0.2s;
   cursor: pointer;
   font-size: 14px;
@@ -478,32 +484,21 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
   }
 }
 @media screen and (max-height: 768px) {
-  aside {
-    height: 768px;
-  }
   aside .content {
-    height: 100%;
+    gap: 0;
+  }
+  aside .content button {
+    margin-top: 15px;
   }
   aside .content .inf {
-    height: 10%;
-    margin-top: 15px;
-    margin-bottom: 35px;
-  }
-  aside .content .inf .social-media {
-    gap: 0px;
-  }
-  aside .content .inf .social-media a ion-icon {
-    margin-top: 0;
-    font-size: 30px;
+    margin: 5px;
   }
   aside .content .contact {
-    height: 55%;
-    gap: 0px;
+    gap: 0;
   }
   aside .content .img {
-    width: 8em;
-    height: 8em;
-    margin-top: -5em;
+    width: 150px;
+    height: 150px;
   }
   .about .skills .skill .skill-content .skill-content-item {
     width: 6.7em;
