@@ -28,8 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
-    padding-right: 50px;
+    margin-right: 1.2em;
 
     .nav-links {
       display: flex;
@@ -53,7 +52,6 @@ header {
         color: rgba(0, 0, 0, 0.6);
         font-weight: bold;
         border-radius: 15px;
-        gap: 5px;
 
         #open-folder {
           position: absolute;
@@ -66,14 +64,14 @@ header {
 
         p {
           position: absolute;
-          margin-top: 30px;
+          margin-top: 3em;
         }
 
         ion-icon {
           font-size: 35px;
           color: rgba(0, 0, 0, 0.6);
           transition: opacity 0.5s ease;
-          margin-top: -20px;
+          margin-top: -0.8em;
         }
 
         &:hover {
