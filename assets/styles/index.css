@@ -129,7 +129,7 @@ aside .content .contact .contact-info .icon {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  font-size: 25px;
+  font-size: 35px;
   transition: ease 0.5s;
 }
 aside .content .contact .contact-info .icon-phone {
@@ -226,22 +226,6 @@ section {
   margin: 16px 16px 16px 0px;
   width: 75%;
   gap: 16px;
-}
-section .top {
-  width: 100%;
-  height: 50%;
-  background-color: black;
-  display: flex;
-  gap: 16px;
-  border-radius: 15px;
-}
-section .bottom {
-  width: 100%;
-  height: 50%;
-  background-color: red;
-  display: flex;
-  gap: 16px;
-  border-radius: 15px;
 }
 
 header {
@@ -355,140 +339,32 @@ header .nav-bar .nav-links:hover > .nav-link:not(:hover) {
     opacity: 0;
   }
 }
-.art {
+.top {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 16px;
+  border-radius: 15px;
+}
+.top .about {
+  height: 100%;
+  width: 65%;
+  background-color: red;
+  border-radius: 15px;
+}
+.top .resume {
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+  border-radius: 15px;
 }
 
-.about {
-  position: absolute;
+.bottom {
   width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  padding: 1em 2em 0 1.5em;
+  height: 50%;
+  background-color: red;
   display: flex;
-  flex-direction: column;
-  gap: 1.7em;
-}
-.about .about-content {
-  background-color: rgba(245, 245, 245, 0.2);
-  border-radius: 15px;
-  display: flex;
-  width: 100%;
-  padding: 1em;
-  justify-content: space-evenly;
-}
-.about .about-content .about-content-text {
-  width: 80%;
-  font-size: 17px;
-  line-height: 1.2;
-  color: rgba(0, 0, 0, 0.7);
-}
-.about .about-content .about-content-text p {
-  font-size: 25px;
-  font-weight: bold;
-}
-.about .about-content .img {
-  overflow: hidden;
-  object-fit: cover;
-  width: 15%;
-}
-.about .about-content .img img {
-  width: 100%;
-}
-.about .skills {
-  display: flex;
-  gap: 2.2%;
-  width: 100%;
-  height: 100%;
-  color: rgba(0, 0, 0, 0.7);
-}
-.about .skills .skill {
-  background-color: rgba(245, 245, 245, 0.2);
-  width: 48.9%;
-  height: 96%;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1em;
-}
-.about .skills .skill p {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 25px;
-  font-weight: bold;
-}
-.about .skills .skill .skill-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  flex-wrap: wrap;
-}
-.about .skills .skill .skill-content .skill-content-item {
-  position: relative;
-  padding: 1em;
-  width: 10em;
-  height: 10em;
-  background-color: rgba(70, 125, 177, 0.8352941176);
-  border-radius: 15px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: ease 0.2s;
-  display: flex;
-  justify-content: center;
-}
-.about .skills .skill .skill-content .skill-content-item .info {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 12em;
-  height: 3em;
-  background-color: rgba(238, 148, 63, 0.737254902);
-  border-radius: 15px;
-  color: white;
-  text-align: center;
-  opacity: 0;
-  margin-top: -4.5em;
-  font-weight: bold;
-}
-.about .skills .skill .skill-content .skill-content-item #high {
-  width: auto;
-  height: 100%;
-}
-.about .skills .skill .skill-content .skill-content-item:hover {
-  transform: scale(1.1);
-  background-color: rgba(245, 245, 245, 0.5);
-}
-.about .skills .skill .skill-content .skill-content-item:hover .info {
-  animation: opacityOn 0.5s ease;
-  opacity: 1;
-}
-.about .skills .skill .skill-content .skill-content-item img {
-  width: 100%;
-  border-radius: 15px;
-}
-.about .skills .skill .skill-content:hover > .skill-content-item:not(:hover) {
-  filter: blur(5px);
-  transform: scale(0.9, 0.9);
-}
-
-.contact-m {
-  pointer-events: none;
-  opacity: 0;
-  background-color: rgba(245, 245, 245, 0.2);
-  height: 95%;
-  width: 95%;
+  gap: 16px;
   border-radius: 15px;
 }
 
