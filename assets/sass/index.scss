@@ -17,5 +17,6 @@ body {
   align-items: center;
 }
 
-@import "components/main", "components/aside", "components/section";
+@import "components/main", "components/aside", "components/section",
+  "components/about";
 @import "components/header", "components/article", "components/responsive";

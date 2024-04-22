@@ -1,0 +1,255 @@
+@use "../abstracts/variables" as variable;
+
+.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 16px;
+  border-radius: 15px;
+  .about {
+    height: 100%;
+    width: 65%;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+    .imgs {
+      display: flex;
+      width: 100%;
+      height: 68%;
+
+      .imgd {
+        overflow: hidden;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          height: 95%;
+          object-fit: cover;
+        }
+      }
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      @keyframes slidef {
+        to {
+          transform: translateX(0);
+        }
+        from {
+          transform: translateX(-100%);
+        }
+      }
+      .content {
+        width: 70%;
+      }
+      .logos {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        padding: 25px 0;
+        white-space: nowrap;
+        display: flex;
+        position: relative;
+      }
+
+      .logosf {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        padding: 25px 0;
+        white-space: nowrap;
+        display: flex;
+      }
+
+      .logos-slide {
+        display: flex;
+        animation: 15s slide infinite linear;
+        align-items: center;
+      }
+      .logos-slidef {
+        display: flex;
+        animation: 15s slidef infinite linear;
+        align-items: center;
+      }
+
+      .logos-slide .img {
+        width: 120px;
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 90%;
+          object-fit: cover;
+        }
+      }
+      .logos-slidef .imgf {
+        width: 120px;
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 90%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .resume {
+    height: 100%;
+    width: 35%;
+    background-color: blue;
+    border-radius: 15px;
+  }
+}
+.bottom {
+  width: 100%;
+  height: 50%;
+  background-color: red;
+  display: flex;
+  gap: 16px;
+  border-radius: 15px;
+}
+
+// header {
+//   width: 100%;
+//   height: 12%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   position: static;
+//   padding: 1.2% 0 0 2%;
+
+//   .logo {
+//     width: 25%;
+//     height: 100%;
+//     border-radius: 15px;
+//     background-color: rgba(245, 245, 245, 0.2);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img {
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+//   .nav-bar {
+//     height: 100%;
+//     width: 35%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-right: 1.2em;
+
+//     .nav-links {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-evenly;
+//       height: 100%;
+//       width: 100%;
+//       position: relative;
+
+//       .nav-link {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         height: 100%;
+//         width: 20%;
+//         background-color: variable.$primary;
+//         transition: ease 0.2s;
+//         cursor: pointer;
+//         font-size: 14px;
+//         color: rgba(0, 0, 0, 0.6);
+//         font-weight: bold;
+//         border-radius: 15px;
+
+//         #open-folder {
+//           position: absolute;
+//           opacity: 0;
+//         }
+
+//         #close-folder {
+//           position: absolute;
+//         }
+
+//         p {
+//           position: absolute;
+//           margin-top: 3em;
+//         }
+
+//         ion-icon {
+//           font-size: 35px;
+//           color: rgba(0, 0, 0, 0.6);
+//           transition: opacity 0.5s ease;
+//           margin-top: -0.8em;
+//         }
+
+//         &:hover {
+//           transform: scale(1.1, 1.1);
+//           background-color: rgba(245, 245, 245, 0.8);
+
+//           #close-folder {
+//             animation: opacityOff 0.5s ease;
+//             opacity: 0;
+//           }
+
+//           #open-folder {
+//             animation: opacityOn 0.5s ease;
+//             opacity: 1;
+//           }
+//         }
+
+//         &:hover:not(:hover) {
+//           #close-folder {
+//             opacity: 0;
+//             animation: opacityOn ease-in-out forwards;
+//           }
+
+//           #open-folder {
+//             opacity: 1;
+//             animation: opacityOff ease-in-out forwards;
+//           }
+//         }
+//       }
+
+//       &:hover > .nav-link:not(:hover) {
+//         filter: blur(5px);
+//         transform: scale(0.9, 0.9);
+//       }
+//     }
+//   }
+// }
+
+// @keyframes opacityOn {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @keyframes opacityOff {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
