@@ -1,5 +1,5 @@
 aside {
-  width: 25%; 
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,9 +21,9 @@ aside {
     gap: 15px;
     
     .img {
-      width: 9em;
-      height: 9em;
-      border-radius: 15px;
+      width: 45%;
+      height: 20%;
+      border-radius: 10px;
       overflow: hidden;
 
       img {
@@ -59,7 +59,7 @@ aside {
           color: black;
           ion-icon {
             margin-top: 5px;
-            font-size: 35px;
+            font-size: 2.5vw;
             transition: ease 0.5s;
             color: rgba(0, 0, 0, 0.7);
             &.in:hover {
@@ -79,15 +79,15 @@ aside {
       flex-direction: column;
       justify-content: center;
       gap: 1em;
-      border-radius: 15px;
+      border-radius: 10px;
       background: rgba(245, 245, 245, 0.6);
-      padding: 2em;
+      padding: 1.5vw;
       color: rgba(0, 0, 0, 0.7);
       .contact-info {
         display: flex;
         align-items: center;
-        gap: 1em;
-        margin: 1em 0;
+        gap: 1.5vw;
+        margin: 0.7vw 0;
         width: 100%;
         text-overflow: ellipsis;
         h3 {
@@ -105,14 +105,14 @@ aside {
         }
 
         .icon {
-          width: 45px;
-          height: 45px;
+          width: 2.5vw;
+          height: 5vh;
           background: whitesmoke;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 8px;
-          font-size: 35px;
+          border-radius: 6px;
+          font-size: 2vw;
           transition: ease 0.5s;
 
           &-phone {
@@ -153,11 +153,10 @@ aside {
       background: #2a4f79;
       color: whitesmoke;
       border: none;
-      width: 12em;
-      height: 4em;
-      margin: 2em;
-      border-radius: 10px;
-      font-size: 15px;
+      width: 15vw;
+      height: 6vh;
+      margin-top: 3vh;
+      border-radius: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
